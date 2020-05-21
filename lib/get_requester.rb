@@ -26,9 +26,9 @@ class GetRequester
 
 end
 
-laura = GetRequester.new("https://stephanieharston.github.io/")
-laura.get_response_body
-laura.parse_json
+# laura = GetRequester.new("https://stephanieharston.github.io/")
+# laura.get_response_body
+# laura.parse_json
 # https://data.cityofnewyork.us/resource/uvks-tn5n.json
 #
 # https://stephanieharston.github.io/
