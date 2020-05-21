@@ -4,14 +4,14 @@
 class GetRequester
 
   def initialize(url)
-    @url = url 
-  end 
+    @url = url
+  end
 
   def get_response_body
-  end 
+  end
 
   def parse_json
-  end 
+  end
 
-  
+
 end 
