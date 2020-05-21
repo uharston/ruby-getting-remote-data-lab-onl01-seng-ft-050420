@@ -5,12 +5,14 @@ require 'json'
 
 class GetRequester
 
+  attr_accessor :url 
+
   def initialize(url)
     @url = url
   end
 
-  def get_response_body(input=@url)
-    uri = URI.parse(url)
+  def get_response_body(input)
+    uri = URI.parse(input)
     # uri.open
     # uri.open.string
     # uri = URI.parse("https://stephanieharston.github.io/")
@@ -19,8 +21,8 @@ class GetRequester
 
   end
 
-  def parse_json(input=self.get_response_body)
-    JSON.parse(input)
+  def parse_json
+    JSON.parse(get_response_body(@url))
   end
 
 
