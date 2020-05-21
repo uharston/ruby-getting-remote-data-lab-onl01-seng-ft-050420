@@ -12,11 +12,11 @@ class GetRequester
   def get_response_body(input=@url)
     # uri = URI.parse(url)
     # uri.open
-    # uri.open.string 
+    # uri.open.string
     uri = URI.parse("https://stephanieharston.github.io/")
     response = Net::HTTP.get_response(uri)
-    response.body 
-    
+    response.body
+
   end
 
   def parse_json(input=get_response_body)
@@ -24,11 +24,11 @@ class GetRequester
   end
 
 
-end 
+end
 
 laura = GetRequester.new("https://stephanieharston.github.io/")
 laura.get_response_body
-laura.parse_json 
+laura.parse_json
 # https://data.cityofnewyork.us/resource/uvks-tn5n.json
-# 
+#
 # https://stephanieharston.github.io/
